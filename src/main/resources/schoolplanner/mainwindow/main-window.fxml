@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolplanner.mainwindow.MainWindowController" fillWidth="true" fx:id="rootPane">
+    <children>
+        <HBox spacing="10" VBox.vgrow="NEVER">
+            <children>
+                <Button text="Add Assignment" fx:id="addAssignmentButton" onAction="#handleAddAssignment"/>
+                <Button text="Add Exam" fx:id="addExamButton" onAction="#handleAddExam"/>
+                <Button text="Import CSV" fx:id="importCSVButton" onAction="#handleImportCSV"/>
+                <Button text="Export CSV" fx:id="exportCSVButton" onAction="#handleExportCSV"/>
+                <Button text="Dark Mode" fx:id="themeToggleButton" onAction="#toggleTheme"/>
+
+            </children>
+        </HBox>
+        <BorderPane VBox.vgrow="ALWAYS">
+            <left>
+                <VBox spacing="10" minWidth="200" maxWidth="300" minHeight="100" maxHeight="500">
+                    <children>
+                        <Label text="Assignments" VBox.vgrow="NEVER"/>
+                        <ListView fx:id="assignmentsList" VBox.vgrow="ALWAYS"/>
+                        <HBox VBox.vgrow="NEVER">
+                                <Button text="Sort by Due Date" fx:id="sortButton" onAction="#handleToggleSort"/>
+                        </HBox>
+                    </children>
+                </VBox>
+            </left>
+            <right>
+                <VBox spacing="10" minWidth="200" maxWidth="300" minHeight="100" maxHeight="500">
+                    <children>
+                        <Label text="Exams" VBox.vgrow="NEVER"/>
+                        <ListView fx:id="examsList" VBox.vgrow="ALWAYS"/>
+
+                        <HBox VBox.vgrow="NEVER">
+                            <Button text="Open Calendar" onAction="#handleOpenCalendar"/>
+                        </HBox>
+                    </children>
+                </VBox>
+            </right>
+        </BorderPane>
+    </children>
+
+    <padding>
+        <Insets right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>

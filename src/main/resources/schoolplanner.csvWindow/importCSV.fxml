@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolplanner.csvWindow.ImportCSVController">
+    <children>
+        <Label text="Select a CSV file to import assignments"/>
+        <TextField fx:id="assignmentFilePathField" editable="false"/>
+        <Button text="Browse" onAction="#handleAssignmentBrowse"/>
+
+        <Label text="Select a CSV file to import exams"/>
+        <TextField fx:id="examFilePathField" editable="false"/>
+        <Button text="Browse" onAction="#handleExamBrowse"/>
+        <Button text="Import" onAction="#handleImport"/>
+    </children>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+</VBox>

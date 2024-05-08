@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolplanner.examWindow.AddExamBoxController" spacing="10">
+    <children>
+        <TextField fx:id="nameField" promptText="Exam Name"/>
+        <DatePicker fx:id="examDatePicker" promptText="Exam Date"/>
+        <ComboBox fx:id="priorityField" promptText="Priority"/>
+        <TextField fx:id="subjectField" promptText="Subject"/>
+        <TextArea fx:id="notesField" promptText="Notes"/>
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <Button text="OK" onAction="#handleOk"/>
+            <Button text="Cancel" onAction="#handleCancel"/>
+        </HBox>
+    </children>
+</VBox>

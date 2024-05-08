@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: #555;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.completed {
+    -fx-text-fill: gray;
+    -fx-strikethrough: true;
+}
+
+.assignment-due-soon {
+    -fx-background-color: yellow;
+}
+
+.assignment-overdue {
+    -fx-background-color: lightcoral;
+}
+
