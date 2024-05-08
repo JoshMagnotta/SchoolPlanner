@@ -1,4 +1,4 @@
-#School Planner
+# School Planner
 
 Tracker for upcoming Assignments and Exams. Built with Java & JavaFX
 
