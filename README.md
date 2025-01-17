@@ -1,5 +1,5 @@
-# School Planner
+## School Planner
+Desktop application for students to keep track of upcoming assignments & exams. 
 
-Tracker for upcoming Assignments and Exams. Built with Java & JavaFX
-
-Data has already been loaded via CSV files. 
+## Tech/framework used
+Java & JavaFX
